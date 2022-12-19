@@ -49,6 +49,13 @@ namespace Exercise5_Queues
             if (diva == null)
                 nafisyah = null;
         }
+        public void display()
+        {
+            Node display;
+            for (display = diva; display != null; display = display.next)
+                Console.WriteLine(display.name);
+        }
+
     }
     class program
     {
