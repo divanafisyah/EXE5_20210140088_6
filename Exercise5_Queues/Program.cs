@@ -38,6 +38,17 @@ namespace Exercise5_Queues
             nafisyah.next = newnode;
             nafisyah = newnode;
         }
+        public void delete()
+        {
+            if (diva == null)
+            {
+                Console.WriteLine("Queue is empty");
+                return;
+            }
+            diva = diva.next;
+            if (diva == null)
+                nafisyah = null;
+        }
     }
     class program
     {
