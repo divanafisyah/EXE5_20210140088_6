@@ -7,8 +7,19 @@ using System.Threading.Tasks;
 
 namespace Exercise5_Queues
 {
-    internal class Program
+    class Node
     {
+        public string name;
+        public Node next;
+    }
+    class queue
+    {
+        Node diva, nafisyah;
+
+        public void insert()
+        {
+
+        }
         static void Main(string[] args)
         {
         }
