@@ -16,6 +16,11 @@ namespace Exercise5_Queues
     {
         Node diva, nafisyah;
 
+        public queue()
+        {
+            diva = null;
+            nafisyah = null;
+        }
         public void insert()
         {
 
