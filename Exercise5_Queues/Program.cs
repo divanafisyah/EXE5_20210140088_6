@@ -51,6 +51,11 @@ namespace Exercise5_Queues
         }
         public void display()
         {
+            if (diva == null)
+            {
+                Console.WriteLine("Queue is empty");
+                return;
+            }
             Node display;
             for (display = diva; display != null; display = display.next)
                 Console.WriteLine(display.name);
@@ -64,7 +69,17 @@ namespace Exercise5_Queues
             char ch;
             while (true)
             {
-
+                try
+                {
+                    Console.WriteLine("Menu");
+                    Console.WriteLine("1. Insert Element");
+                    Console.WriteLine("2. Delete Element");
+                    Console.WriteLine("3. Display Element");
+                    Console.WriteLine("4. Exit");
+                    Console.Write("\nEnter your choice: ");
+                    ch = Convert.ToChar(Console.ReadLine());
+                    Console.WriteLine();
+                }
             }
         }
     }
