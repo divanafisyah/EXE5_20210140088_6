@@ -23,8 +23,24 @@ namespace Exercise5_Queues
         }
         public void insert()
         {
-
+            string nm;
+            Node newnode = new Node();
+            Console.WriteLine("Masukkan Element:");
+            nm = Console.ReadLine();
+            newnode.name = nm;
+            newnode.next = null;
+            if (diva == null)
+            {
+                diva = newnode;
+                nafisyah = newnode;
+                return;
+            }
+            nafisyah.next = newnode;
+            nafisyah = newnode;
         }
+    }
+    class program
+    {
         static void Main(string[] args)
         {
         }
