@@ -55,12 +55,17 @@ namespace Exercise5_Queues
             for (display = diva; display != null; display = display.next)
                 Console.WriteLine(display.name);
         }
-
     }
     class program
     {
         static void Main(string[] args)
         {
+            queue q = new queue();
+            char ch;
+            while (true)
+            {
+
+            }
         }
     }
 }
