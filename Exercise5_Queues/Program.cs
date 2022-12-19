@@ -79,6 +79,27 @@ namespace Exercise5_Queues
                     Console.Write("\nEnter your choice: ");
                     ch = Convert.ToChar(Console.ReadLine());
                     Console.WriteLine();
+                    switch (ch)
+                    {
+                        case '1':
+                            q.insert();
+                            break;
+                        case '2':
+                            q.delete();
+                            break;
+                        case '3':
+                            q.display();
+                            break;
+                        case '4':
+                            return;
+                        default:
+                            Console.WriteLine("Invalid Option");
+                            break;
+                    }
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine("Check for the value entered.");
                 }
             }
         }
